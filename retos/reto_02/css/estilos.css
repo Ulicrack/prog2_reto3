@@ -1,0 +1,73 @@
+:root{
+	/*COLOR*/
+	--col1:#36383f;
+	--col2:#8a93a0;
+	--fondo:#b0b1b2;
+
+	/*TIPOGRAFÍA*/
+	--grande: 60px;
+	--mediana: 40px;
+	--chica: 20px;
+}
+body{
+	font-family: 'Chau Philomene One', sans-serif;
+	background-color: var(--fondo);
+	text-align: center;
+}
+h1{
+	font-size: var(--grande);
+	color: var(--col1);
+	background-color: var(--col2);
+	border-top: 5px solid var(--col1);
+	border-bottom: 5px solid var(--col1);
+	margin: 0;
+}
+h2{
+	color: var(--col1);
+	font-size: var(--mediana);
+}
+.menu-box h3{
+	color: var(--col2);
+	background-color: var(--col1);
+	font-size: var(--mediana);
+	margin: 0;
+}
+p{
+	font-size: var(--chica);
+	color: var(--col1);
+	margin: 20px;
+}
+.imagen{
+	height: 20%;
+	width: 20%;
+	margin: 20px;
+	border: 5px solid var(--col1);
+	border-radius: 50px;
+}
+.menu-box ul{
+	text-align: center;
+	background-color: var(--col2);
+	list-style-type: none;
+	padding: 0;
+	border-top: 5px solid var(--col1);
+	border-bottom: 5px solid var(--col1);
+}
+.menu-box a{
+	text-decoration:none;
+	color: var(--col1);
+	font-size: var(--chica);
+}
+.menu-box a.activo{
+	text-decoration:none;
+	color: var(--col2);
+	font-size: var(--chica);
+}
+.menu-box li.activo{
+	background-color: var(--col1);
+}
+footer{
+	background-color: var(--col2);
+	font-size: var(--mediana);
+	border-top: 5px solid var(--col1);
+	border-bottom: 5px solid var(--col1);
+}

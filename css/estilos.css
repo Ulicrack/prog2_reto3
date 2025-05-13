@@ -75,18 +75,23 @@ h1{
 
 
 
-.products{
+.products {
   background-image: url("../images/curve.png");
-  max-height: 50px;
   background-size: cover;
   background-position: center top;
-  padding:17% 20%;
+  padding: 40px 20px;
   display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
-.product{
-  margin-top: -290px;
+
+.product {
+  margin: 0;
   padding: var(--space-medio);
   text-align: left;
+  max-width: 300px;
+  flex: 1 1 300px;
 }
 .product .content{
   background-color: var(--white-color);
@@ -157,4 +162,65 @@ h1{
 }
 .menciones .content p{
   padding: var(--space);
+}
+
+
+@media (max-width: 768px) {
+
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  nav li {
+    padding: 10px 0;
+  }
+
+  .main_section {
+    padding: 40px 20px;
+  }
+
+  .products {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .product {
+    margin-top: 0; 
+    margin-bottom: 20px;
+  }
+
+  .categorias {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .categorias .content {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .menciones {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .menciones .content {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+
+  img {
+    width: 100% !important;
+    height: auto !important;
+  }
 }

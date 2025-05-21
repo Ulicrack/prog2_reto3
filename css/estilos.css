@@ -33,6 +33,19 @@ html,body{
 }
 
 
+footer{
+  font-size: large;
+  padding-left: 10px;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  display: flex;
+}
+
+footer .izq {
+  margin-left: auto;
+  padding-right: 10px;
+}
+
 nav{
   display: flex;
   background-color: var(--green-color);
@@ -87,10 +100,10 @@ h1{
 }
 
 .product {
-  margin: 0;
+  margin-bottom: 200px;
   padding: var(--space-medio);
   text-align: left;
-  max-width: 300px;
+  max-width: 470px;
   flex: 1 1 300px;
 }
 .product .content{
